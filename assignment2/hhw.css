@@ -1,0 +1,115 @@
+                        /*Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700
+*/
+                        
+                        * {
+                            font-family: 'Karla';
+                        }
+                        
+                        .grid {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            grid-template-rows: 1fr 1fr;
+                            font-size: 16px;
+                        }
+                        
+                        .top {
+                            grid-column-start: 1;
+                            grid-column-end: 2;
+                            grid-row-start: 1;
+                            grid-row-end: 2;
+                            background-color: white;
+                            margin-left: 50px;
+                            margin-top: 50px;
+                            width: max-content;
+                        }
+                        
+                        .top>h3 {
+                            font-size: large;
+                            font-weight: bold;
+                            color: darkturquoise;
+                        }
+                        
+                        .top>h4 {
+                            font-size: large;
+                            font-weight: bold;
+                            color: greenyellow;
+                        }
+                        
+                        .top>h5 {
+                            font-size: large;
+                            font-weight: bold;
+                            opacity: 0.5;
+                        }
+                        
+                        .left {
+                            grid-column-start: 1;
+                            grid-column-end: 2;
+                            grid-row-start: 2;
+                            grid-row-end: 3;
+                            background-color: darkturquoise;
+                        }
+                        
+                        .innerleft {
+                            margin-top: 5rem;
+                            margin-left: 50px;
+                            color: white;
+                        }
+                        
+                        .innerleftone {
+                            margin-top: 3.5rem;
+                        }
+                        
+                        a {
+                            background-color: yellowgreen;
+                            color: white;
+                            text-decoration: none;
+                            cursor: pointer;
+                            padding: 10px 100px;
+                        }
+                        
+                        .right {
+                            grid-column-start: 2;
+                            grid-column-end: 3;
+                            grid-row-start: 2;
+                            grid-row-end: 3;
+                            background-color: rgb(82, 223, 209);
+                        }
+                        
+                        .innerright {
+                            margin-left: 50px;
+                            margin-top: 40px;
+                        }
+                        
+                        .innerright>h4 {
+                            opacity: 0.6;
+                        }

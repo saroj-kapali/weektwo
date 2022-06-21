@@ -1,0 +1,240 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+
+### Neutral
+
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%)
+
+Note for text colors:
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+
+## Typography
+
+### Body Copy
+
+- Font size: 13px
+
+### Font
+
+- Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
+- Weights: 500, 600 */
+
+* {
+    font-size: 13px;
+    font-family: Barlow Semi Condensed;
+    font-weight: 500 600;
+}
+
+.grid {
+    background-color: hsl(0, 0%, 81%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    padding: 60px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.grid>div {
+    padding: 15px;
+}
+
+.grid>div img {
+    clip-path: circle();
+}
+
+.one {
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.innerOne {
+    display: grid;
+    grid-template-columns: [labels]auto [controls]1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+}
+
+.innerOne>img {
+    grid-column: labels;
+    grid-row: auto;
+}
+
+.innerOne>h5 {
+    grid-column: controls;
+    margin-top: -2rem;
+    grid-row: auto;
+}
+
+.one>h2 {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.one>p {
+    line-height: 1.5rem;
+    opacity: 0.6;
+}
+
+.two {
+    background-color: lightslategray;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.three {
+    background-color: white;
+    color: black;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.four {
+    background-color: white;
+    color: black;
+}
+
+.five {
+    background-color: black;
+    color: white;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.innertwo {
+    display: grid;
+    grid-template-columns: [labels]auto [controls]1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+}
+
+.innertwo>img {
+    grid-column: labels;
+    grid-row: auto;
+}
+
+.innertwo>h5 {
+    grid-column: controls;
+    margin-top: -2rem;
+    grid-row: auto;
+}
+
+.two>h2 {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.two>p {
+    line-height: 1.5rem;
+    opacity: 0.6;
+}
+
+.innerthree {
+    display: grid;
+    grid-template-columns: [labels]auto [controls]1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+}
+
+.innerthree>img {
+    grid-column: labels;
+    grid-row: auto;
+}
+
+.innerthree>h5 {
+    grid-column: controls;
+    margin-top: -2rem;
+    grid-row: auto;
+}
+
+.three>h2 {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.three>p {
+    line-height: 1.5rem;
+    opacity: 0.6;
+}
+
+.innerfour {
+    display: grid;
+    grid-template-columns: [labels]auto [controls]1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+}
+
+.innerfour>img {
+    grid-column: labels;
+    grid-row: auto;
+}
+
+.innerfour>h5 {
+    grid-column: controls;
+    margin-top: -2rem;
+    grid-row: auto;
+}
+
+.four>h2 {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.four>p {
+    line-height: 1.5rem;
+    opacity: 0.6;
+}
+
+.innerfive {
+    display: grid;
+    grid-template-columns: [labels]auto [controls]1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+}
+
+.innerfive>img {
+    grid-column: labels;
+    grid-row: auto;
+}
+
+.innerfive>h5 {
+    grid-column: controls;
+    margin-top: -2rem;
+    grid-row: auto;
+}
+
+.five>h2 {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.five>p {
+    line-height: 1.5rem;
+    opacity: 0.6;
+}
